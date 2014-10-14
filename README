@@ -13,4 +13,10 @@ code to make it compatible with the traces for other power sensors. Luckily
 for you, the ina219's code is already there and will tell you how you to handle
 it.
 
+You may want to use nva_fake_counters to generate fake loads more precisely than
+running carefully-designed GL/CL applications!
+
+In all cases, you'll need to install the envytools repo, especially the libnva:
+https://github.com/envytools/envytools
+
 Have fun tracing the blob!
