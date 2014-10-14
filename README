@@ -1,0 +1,16 @@
+# PDAEMON_Trace
+
+This toolset is meant to allow tracing the reclocking policy of pdaemon/pmu
+on NVIDIA Kepler GPUs.
+
+The modification to Nouveau is minimal and I would advise using a more
+up-to-date version of nouveau, found at
+http://cgit.freedesktop.org/~darktama/nouveau The patch that should be applied
+on top of it can be found in the nouveau/folder (0001-just-dump-the-clocks.patch).
+
+Concerning pwr_read, if you do not have an ina3221, you may have to tweak the
+code to make it compatible with the traces for other power sensors. Luckily
+for you, the ina219's code is already there and will tell you how you to handle
+it.
+
+Have fun tracing the blob!
